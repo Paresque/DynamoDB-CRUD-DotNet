@@ -1,0 +1,74 @@
+POST https://localhost:7281/usuario/
+Content-Type: application/json
+
+{
+    "Email": "thyago@email.com",
+    "Site": "Submarino",
+    "Cidade": "Rio de Janeiro",
+    "Nome": "Thyago",
+    "Senha": "123456"
+}
+
+###
+
+POST https://localhost:7281/usuario/
+Content-Type: application/json
+
+{
+    "Email": "joao@email.com",
+    "Site": "Submarino",
+    "Cidade": "Salvador",
+    "Nome": "João",
+    "Senha": "qwerty"
+}
+
+###
+
+POST https://localhost:7281/usuario/
+Content-Type: application/json
+
+{
+    "Email": "maria@email.com",
+    "Site": "Americanas",
+    "Cidade": "Ipojuca",
+    "Nome": "Maria",
+    "Senha": "senha123"
+}
+
+### 
+
+GET https://localhost:7281/usuario/
+Content-Type: application/json
+Site: Americanas
+
+### 
+
+GET https://localhost:7281/usuario/
+Content-Type: application/json
+Site: Submarino
+
+### 
+
+GET https://localhost:7281/usuario/thyago@email.com
+Content-Type: application/json
+Site: Submarino
+
+### 
+
+PUT https://localhost:7281/usuario/
+Content-Type: application/json
+Site: Submarino
+
+{
+    "Email": "maria@email.com",
+    "Site": "Americanas",
+    "Cidade": "São Paulo",
+    "Nome": "Maria",
+    "Senha": "senha123"
+}
+
+### 
+
+DELETE https://localhost:7281/usuario/thyago@email.com
+Content-Type: application/json
+Site: Submarino
